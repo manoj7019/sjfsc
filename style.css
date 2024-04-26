@@ -1,0 +1,81 @@
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* background-image: linear-gradient(to bottom right, #fbf8d8, #fdf9aa, #d7f378, #c9f172, #50b159, #182e2a); */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid lightgray;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid grey;
+}
+
+.headerBtn {
+    margin-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Hero {
+    text-align: left;
+    padding: 2rem 5rem;
+}
+
+.heroHeadline {
+    font-size: 7rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.heroBtns {
+    display: flex;
+    align-items: center;
+}
+
+.heroBtn {
+    margin-right: 2rem;
+}
+
+#playBtn {
+    height: 1rem;
+    margin:0 0 -0.1rem 0.2rem;
+}
+
