@@ -8,11 +8,34 @@
 </head>
 <body>
     <div class="header">
-        <h1>SJFSC</h1>
+        <img class="logo" src="./icons/logo/sjlogo.png">
         <div class="navbar">
-            <li>Loans</li>
+            <div class="loans">
+                <!-- <a href=""> -->
+                    <button class="loanBtn" onclick="myFunction()">Loans</button>
+                    <div id="loansDD" class="loans-content">
+                        <a href="#personal">Personal loan</a>
+                        <a href="#business">Business loan</a>
+                        <a href="#home">Home loan</a>
+                        <a href="#home">Loan against property / Mortgage</a>
+                        <a href="#home">Educational loan</a>
+                        <a href="#home">Overdraft (OD) and Cash credit (CC)</a>
+                        <a href="#home">Two wheeler loan</a>
+                        <a href="#home">Car loan</a>
+                        <a href="#home">Electric vehicle loan</a>
+                        <a href="#home">Commercial vehicle loan</a>
+                        <a href="#home">Used vehicle loan</a>
+                        <a href="#home">Machinery / Equipment loan</a>
+                        <a href="#home">Professional loan</a>
+                        <a href="#home">Balance transfer / Top-up loans</a>
+                        <a href="#home">Credit card loans</a>
+                    </div>
+                <!-- </a> -->
+            </div>
+            <li>Insurance</li>
+            <li>IT services</li>
+            <li>Real estate</li>
             <li>Community</li>
-            <li>Partner with us</li>
             <li>Contact Us</li>
         </div>
         <div class="buttons">
@@ -27,7 +50,7 @@
 
     <div class="Hero">
         <h1 class="heroHeadline">
-            Building Trust Of <br>Your Financial Plan
+            Building Trust Of Your<br>Financial Plan
         </h1>
         <p>
             Explore services for loans, secure savings<br> and better financial planning.
@@ -35,7 +58,7 @@
 
         <div class="heroBtns">
             <button class="heroBtn">
-                Discover
+                Partner with us
             </button>
                 <a href="">
                     Watch our plans
@@ -43,5 +66,87 @@
                 </a>
         </div>
     </div>
+
+    <h1 class="partSecondHeadline">Feel the best experience<br>with our features</h1>
+
+    <div class="partSecond">
+        <div class="partOne">
+            <div class="partLeft">
+                <a href="">
+                    <img class="icons" src="./icons/play-button.png">
+                    <h1>Empowering dreams, one loan at a time, with you always.</h1>
+                    <p class="partPara">Need a financial boost? We've got you covered. Our loans are designed to fit your needs, with flexible terms and competitive rates. Let us help you achieve your goals today!</p>
+                    <img class="image1" src="./images/loan1.png">
+                </a>
+            </div>
+            <div class="partRight">
+                <a href="">
+                    <img class="icons" src="./icons/play-button.png">
+                    <h1 class="">Protecting what matters most, with tailored solutions just for you.</h1>
+                    <p class="">Secure your future with our comprehensive insurance plans. From life to property, we've got you covered. Trust us to safeguard what matters most to you.</p>
+                    <img class="image2" src="./images/insurance.png">
+                </a>
+            </div>
+        </div>
+        <div class="partTwo">
+            <a href="">
+                <img class="icons" src="./icons/play-button.png">
+                <h1>We're your IT partner, delivering bespoke solutions for business success.</h1>
+                <p class="partPara">Empowering businesses through cutting-edge IT solutions. Let us be your partner in success.</p>
+                <img class="image3" src="./images/file.png">
+            </a>
+        </div>
+        <div class="partOne">
+            <div class="partThird">
+                <a href="">
+                    <img class="icons" src="./icons/play-button.png">
+                    <h1>Find your dream property with our personalized real estate solutions.</h1>
+                    <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
+                    <img class="image4" src="./images/file.png">
+                </a>
+            </div>
+            <div class="partThird">
+                <a href="">
+                    <img class="icons" src="./icons/play-button.png">
+                    <h1>Reach or Join our community.</h1>
+                    <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
+                    <img class="image5" src="./images/file.png">
+                </a>
+            </div>
+            <div class="partThird">
+                <a href="">
+                    <img class="icons" src="./icons/play-button.png">
+                    <h1>Get in touch with us.</h1>
+                    <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
+                    <img class="image6" src="./images/file.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="partSecondHeadline">We have 100+ Banks & NBFC Partners</h1>
+    
+    <br>
+    <br>
+
 </body>
 </html>
+
+<script>
+    function myFunction(){
+        document.getElementById("loansDD").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.loans')) {
+            let dropdowns = document.getElementsByClassName("loans-content");
+            let i;
+            for (i = 0; i < dropDowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 80vh;
     /* background-image: linear-gradient(to bottom right, #fbf8d8, #fdf9aa, #d7f378, #c9f172, #50b159, #182e2a); */
 }
 
@@ -12,7 +12,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
+    margin: 1rem 2rem 0 2rem;
+}
+
+.logo {
+    height: 4rem;
+    margin-bottom: 0.5rem;
 }
 
 .navbar {
@@ -24,9 +29,60 @@ body {
     border-radius: 2rem;
 }
 
+/* DROPDOWN BUTTONS */
+
+.loanBtn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.loanBtn:hover, .loanBtn:focus {
+    /* background-color: rgba(128, 128, 128, 0.198); */
+    background-color: black;
+    color: white;
+}
+
+.loans {
+    position: relative;
+    display: inline-block;
+}
+
+.loans-content {
+    display: none;
+    position: absolute;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    min-width: 19rem;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgba(254, 254, 254, 0.289);
+    backdrop-filter: saturate(180%) blur(30px);
+    box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(196, 196, 196, 0.32);
+}
+
+.loans-content a {
+    color: black;
+    padding: 0.9rem;
+    text-decoration: none;
+    display: block;
+}
+
+.loans a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
 li {
     list-style-type: none;
-    margin: 0 2rem;
+    margin: 0 1.5rem;
 }
 
 .buttons {
@@ -39,6 +95,8 @@ button {
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     border: 0.1rem solid grey;
+    background-color: red;
+    color: white;
 }
 
 .headerBtn {
@@ -52,16 +110,16 @@ a {
 
 .Hero {
     text-align: left;
-    padding: 2rem 5rem;
+    padding: 2rem;
 }
 
 .heroHeadline {
-    font-size: 7rem;
+    font-size: 5rem;
     margin-bottom: 0;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
 }
 
@@ -72,10 +130,91 @@ p {
 
 .heroBtn {
     margin-right: 2rem;
+    font-size: 2rem;
 }
 
 #playBtn {
     height: 1rem;
     margin:0 0 -0.1rem 0.2rem;
+    background-color: white;
+    border-radius: 1rem;
 }
+
+.partSecondHeadline {
+    font-size: 4rem;
+    margin: 4rem;
+    text-align: center;
+}
+
+.partOnePara {
+    font-size: 1.2rem;
+}
+
+.partSecond {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.partOne {
+    display: flex;
+    margin: 1rem;
+    gap: 2rem;
+    width: calc(100% - 2rem);
+}
+
+.partLeft, .partRight {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.325);
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 2rem;
+    width: calc(50% - 5rem);
+}
+
+.partTwo {
+    padding: 2rem;
+    background-color: rgba(211, 211, 211, 0.325);
+    margin: 0 1rem;
+    border-radius: 2rem;
+}
+
+.partThird {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.325);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: calc(33.33333% - 5rem);
+}
+
+.icons {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(205, 231, 8);
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.image1,
+.image2 {
+    height: 30rem;
+}
+
+.image1 {
+    margin-left: 4rem;
+}
+
+.image2 {
+    margin-left: -4rem;
+}
+
+.image3,
+.image4,
+.image5,
+.image6 {
+    height: 10rem;
+}
+
 
