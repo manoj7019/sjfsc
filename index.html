@@ -78,11 +78,21 @@
                 Login
             </button>
         </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <!-- Hamburger menu -->
+        <div id="myNav" class="overlay">
+            <a href="" class="closeBtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Loans</a>
+                <a href="#">Insurance</a>
+                <a href="#">IT Services</a>
+                <a href="#">Real estate</a>
+                <a href="#">Real estate</a>
+                <a href="#">Community</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sign up</a>
+            </div>
         </div>
+        <span class="hamBtn" onclick="openNav()">&#9776;</span>
     </div>
 
     <div class="Hero">
@@ -90,7 +100,7 @@
             Building Trust Of Your<br>Financial Plan
         </h1>
         <p>
-            Explore services for loans, secure savings<br> and better financial planning.
+            Explore services for loans, secure savings and better financial planning.
         </p>
 
         <div class="heroBtns">
@@ -111,7 +121,7 @@
             <div class="partLeft">
                 <a href="">
                     <img class="icons" src="./icons/play-button.png">
-                    <h1>Empowering dreams, one loan at a time, with you always.</h1>
+                    <h2>Empowering dreams, one loan at a time, with you always.</h2>
                     <p class="partPara">Need a financial boost? We've got you covered. Our loans are designed to fit your needs, with flexible terms and competitive rates. Let us help you achieve your goals today!</p>
                     <img class="image1" src="./images/loan1.png">
                 </a>
@@ -119,7 +129,7 @@
             <div class="partRight">
                 <a href="">
                     <img class="icons" src="./icons/play-button.png">
-                    <h1 class="">Protecting what matters most, with tailored solutions just for you.</h1>
+                    <h2 class="">Protecting what matters most, with tailored solutions just for you.</h2>
                     <p class="">Secure your future with our comprehensive insurance plans. From life to property, we've got you covered. Trust us to safeguard what matters most to you.</p>
                     <img class="image2" src="./images/insurance.png">
                 </a>
@@ -128,34 +138,34 @@
         <div class="partTwo">
             <a href="">
                 <img class="icons" src="./icons/play-button.png">
-                <h1>We're your IT partner, delivering bespoke solutions for business success.</h1>
+                <h2>We're your IT partner, delivering bespoke solutions for business success.</h2>
                 <p class="partPara">Empowering businesses through cutting-edge IT solutions. Let us be your partner in success.</p>
-                <img class="image3" src="./images/file.png">
+                <!-- <img class="image3" src="./images/file.png"> -->
             </a>
         </div>
-        <div class="partOne">
+        <div class="partThree">
             <div class="partThird">
                 <a href="">
                     <img class="icons" src="./icons/play-button.png">
-                    <h1>Find your dream property with our personalized real estate solutions.</h1>
+                    <h3>Find your dream property.</h3>
                     <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
-                    <img class="image4" src="./images/file.png">
+                    <!-- <img class="image4" src="./images/file.png"> -->
                 </a>
             </div>
             <div class="partThird">
                 <a href="">
                     <img class="icons" src="./icons/play-button.png">
-                    <h1>Reach or Join our community.</h1>
+                    <h3>Join our community.</h3>
                     <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
-                    <img class="image5" src="./images/file.png">
+                    <!-- <img class="image5" src="./images/file.png"> -->
                 </a>
             </div>
             <div class="partThird">
                 <a href="">
                     <img class="icons" src="./icons/play-button.png">
-                    <h1>Get in touch with us.</h1>
+                    <h3>Get in touch</h3>
                     <!-- <p class="partPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, quibusdam.</p> -->
-                    <img class="image6" src="./images/file.png">
+                    <!-- <img class="image6" src="./images/file.png"> -->
                 </a>
             </div>
         </div>
@@ -170,20 +180,11 @@
 </html>
 
 <script>
-    function myFunction(){
-        document.getElementById("loansDD").classList.toggle("show");
-    }
+    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.loans')) {
-            let dropdowns = document.getElementsByClassName("loans-content");
-            let i;
-            for (i = 0; i < dropDowns.length; i++) {
-                let openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 </script>

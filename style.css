@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    height: 80vh;
+    height: 100vh;
     /* background-image: linear-gradient(to bottom right, #fbf8d8, #fdf9aa, #d7f378, #c9f172, #50b159, #182e2a); */
 }
 
@@ -14,11 +14,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 2rem 0 2rem;
+    margin: 1rem 1.5rem 0 1.5rem;
 }
 
 .logo {
-    height: 4rem;
+    height: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -73,7 +73,7 @@ body {
     color: black;
     border: none;
     font-size: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.25rem 1rem;
     border-radius: 1rem;
 }
@@ -106,11 +106,69 @@ a {
     color: black;
 }
 
+/* HAMBURGER MENU */
+
+.hamBtn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
 /* HERO */
 
 .Hero {
     text-align: left;
-    padding: 2rem;
+    margin: 1.5rem;
 }
 
 .heroHeadline {
@@ -130,7 +188,7 @@ p {
 
 .heroBtn {
     margin-right: 2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 #playBtn {
@@ -153,40 +211,52 @@ p {
 .partSecond {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.5rem;
     gap: 1rem;
 }
 
 .partOne {
     display: flex;
     margin: 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
     width: calc(100% - 2rem);
+    flex-wrap: wrap;
 }
 
 .partLeft, .partRight {
     display: flex;
     flex-direction: column;
     background-color: rgba(211, 211, 211, 0.325);
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     border-radius: 2rem;
-    width: calc(50% - 5rem);
+    width: calc(50% - 4.85rem);
 }
+
 
 .partTwo {
     padding: 2rem;
     background-color: rgba(211, 211, 211, 0.325);
-    margin: 0 1rem;
+    margin: -0.5rem 1rem;
     border-radius: 2rem;
+}
+
+.partThree {
+    display: flex;
+    margin: 1rem;
+    gap: 1.5rem;
+    width: calc(100% - 2rem);
+    flex-wrap: wrap;
 }
 
 .partThird {
     display: flex;
     flex-direction: column;
     background-color: rgba(211, 211, 211, 0.325);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 2rem;
-    width: calc(33.33333% - 5rem);
+    width: calc(33.33333% - 5.4rem);
+    flex-wrap: wrap;
+    flex: 1 1 50px;
 }
 
 .icons {
@@ -199,15 +269,16 @@ p {
 
 .image1,
 .image2 {
-    height: 30rem;
+    width: 100%;
 }
 
 .image1 {
-    margin-left: 4rem;
+    margin-bottom: -2.3rem;
 }
 
 .image2 {
-    margin-left: -4rem;
+    /* margin-left: -4rem; */
+    object-fit: cover;
 }
 
 .image3,
@@ -216,5 +287,50 @@ p {
 .image6 {
     height: 10rem;
 }
+
+@media only screen and (max-width : 768px) {
+    .heroHeadline {
+        font-size: 3rem;
+    }
+    .heroBtn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .partSecondHeadline {
+        font-size: 1.6rem;
+        margin: 3rem 0 1rem 0 ;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .partLeft, .partRight {
+        width: calc(100%);
+    }
+    .partThird {
+        width: calc(33.3333% - 4rem);
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 1150px) {
+    .hamBtn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1150px) {
+    .navbar {
+        display: none;
+    }
+    .buttons {
+        display: none;
+    }
+}
+
+
+
+
 
 
