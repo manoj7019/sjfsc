@@ -1,5 +1,7 @@
 html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,55 +31,51 @@ body {
     border-radius: 2rem;
 }
 
-/* DROPDOWN BUTTONS */
-
-.loanBtn {
-    background-color: white;
-    color: black;
-    border: none;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.loanBtn:hover, .loanBtn:focus {
-    /* background-color: rgba(128, 128, 128, 0.198); */
-    background-color: black;
-    color: white;
-}
-
-.loans {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.loans-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    min-width: 19rem;
-    overflow: auto;
+    border-radius: 0.5rem;
+    min-width: 21rem;
     z-index: 1;
     background-color: rgba(254, 254, 254, 0.289);
     backdrop-filter: saturate(180%) blur(30px);
     box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(196, 196, 196, 0.32);
 }
 
-.loans-content a {
+.dropdown-content a {
     color: black;
-    padding: 0.9rem;
+    padding: 0.9rem 2rem;
     text-decoration: none;
     display: block;
 }
 
-.loans a:hover {
+.dropdown-content a:hover {
     background-color: #000000;
     color: white;
+    border-radius: 0.5rem;
 }
 
-.show {
+.dropdown:hover .dropBtn {
+    background-color: rgba(0, 0, 0, 0.105);
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropBtn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
 }
 
 li {
@@ -107,6 +105,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* HERO */
 
 .Hero {
     text-align: left;
