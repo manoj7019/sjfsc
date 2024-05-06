@@ -168,7 +168,9 @@ a {
 
 .Hero {
     text-align: left;
-    margin: 2rem;
+    margin: 4rem 2rem;
+    display: flex;
+    gap: 5rem;
 }
 
 .heroHeadline {
@@ -191,11 +193,63 @@ p {
     font-size: 1.3rem;
 }
 
+.heroBtn:hover {
+    transform: scale(1.2);
+}
+
 #playBtn {
     height: 1rem;
     margin:0 0 -0.1rem 0.2rem;
     background-color: white;
     border-radius: 1rem;
+}
+
+.hero_right_image {
+    margin-right: -2rem;
+}
+
+/* Services */
+.icons {
+    background-color: yellow;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.services_part {
+    display: flex;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin: -0.7rem;
+    flex-wrap: wrap;
+}
+
+.services_part_section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: calc(33.3333% - 1rem);
+    align-items: center;
+    text-align: center;
+}
+
+.services_part_section:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.services_part_section_image {
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .partSecondHeadline {
@@ -204,152 +258,59 @@ p {
     text-align: center;
 }
 
-.partOnePara {
-    font-size: 1.2rem;
-}
 
-.partSecond {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    /* gap: 1rem; */
-}
-
-.partOne {
-    display: flex;
-    margin: 1rem;
-    gap: 2rem;
-    width: calc(100% - 2rem);
-    flex-wrap: wrap;
-}
-
-.partLeft, .partRight {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(211, 211, 211, 0.325);
-    padding: 2rem;
-    border-radius: 2rem;
-    width: calc(50% - 1rem);
-}
-
-.partLeft:hover {
-    background-color: black;
-    transform: scale(1.01);
-}
-
-.partTwo {
-    padding: 2rem;
-    background-color: rgba(211, 211, 211, 0.325);
-    margin: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
-
-.partTwoLeft {
-    width: calc(50% - 2rem);
-}
-
-.partTwoRight {
-    width: calc(50% - 2rem);
-}
-
-.partTwoImage {
-    width: 100%;
-}
-
-.partThree {
-    display: flex;
-    margin: 1rem;
-    gap: 2rem;
-    width: calc(100% - 2rem);
-    flex-wrap: wrap;
-}
-
-.partThird {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(211, 211, 211, 0.325);
-    padding: 1.5rem;
-    border-radius: 2rem;
-    width: calc(33.33333% - 5.4rem);
-    flex-wrap: wrap;
-    flex: 1 1 50px;
-}
-
-#partThird {
-    background-color: black;
-    color: white;
-}
-
-.partThirdHeadline {
-    color: white;
-}
-
-.icons {
-    height: 2rem;
-    width: 2rem;
-    background-color: rgb(205, 231, 8);
-    padding: 0.5rem;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-}
-
-.image1,
-.image2 {
-    width: 100%;
-}
-
-.image1 {
-    margin-bottom: -2.3rem;
-}
-
-.image2 {
-    /* margin-left: -4rem; */
-    object-fit: cover;
-}
-
-.image3,
-.image4,
-.image5,
-.image6 {
-    height: 10rem;
-}
-
-.image4 {
-    width: 100%;
-    height: auto;
-}
 
 @media only screen and (max-width : 768px) {
     .heroHeadline {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
+
+    .Hero {
+        flex-wrap: wrap;
+    }
+
+    .hero_left {
+        width: calc(100%);
+    }
+
+    .hero_right_image {
+        width: calc(100%);
+    }
+
     .heroBtn {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
-    .partTwo {
-        flex-wrap: wrap;
-    }
-
-    .partTwoLeft, .partTwoRight {
-        width: 100%;
-    }
+    
     .partSecondHeadline {
         font-size: 1.6rem;
         margin: 3rem 0 1rem 0 ;
     }
+
+    .icons {
+        height: 1.5rem;
+        padding: 0.2rem;
+        width: auto;
+        margin: 0.255rem;
+    }
+
+    .services_part {
+        padding: 0.5rem;
+    }
+
+    .services_part_section {
+        padding: 1rem;
+        width: calc(50% - 0.75rem);
+    }
+
+    .sevices_part_section_image {
+        height: 1rem;
+    }
+
     p {
         font-size: 1.2rem;
     }
-    .partLeft, .partRight {
-        width: 100%;
-    }
-    .partThird {
-        width: calc(50% - 4rem);
-    }
+
     h3 {
         font-size: 1rem;
     }
@@ -424,9 +385,9 @@ p {
     }
 
     .partner_image {
-        height: 3rem;
+        height: 2.5rem;
         width: auto;
-        margin: -5px;
+        /* margin: -5px; */
     }
 }
 
