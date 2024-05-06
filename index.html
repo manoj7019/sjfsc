@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>SJFSC</title>
 </head>
-<body>
+<body onload="showSecondary()">
     <div class="header">
         <img class="logo" src="./icons/logo/sjlogo.png">
         <div class="navbar">
@@ -126,42 +126,42 @@
                 <a href="">
                     <img class="icons" src="./icons/loans.png">
                     <h3 class="services_part_section_headline">Loans</h3>
-                    <img class="services_part_section_image" src="./images/tech.png">
+                    <img class="services_part_section_image" src="./images/loans.png">
                 </a>
             </div>
             <div class="services_part_section two">
                 <a href="">
                     <img class="icons" src="./icons/insurance.png">
                     <h3 class="services_part_section_headline">Insurance</h3>
-                    <img class="services_part_section_image" src="./images/tech.png">
+                    <img class="services_part_section_image" src="./images/insurance.png">
                 </a>
             </div>
             <div class="services_part_section three">
                 <a href="">
                     <img class="icons" src="./icons/ITservices.png">
                     <h3 class="services_part_section_headline">IT Services</h3>
-                    <img class="services_part_section_image" src="./images/tech.png"/>
+                    <img class="services_part_section_image" src="./images/it.png"/>
                 </a>
             </div>
             <div class="services_part_section four">
                 <a href="">
                     <img class="icons" src="./icons/realEstate.png">
                     <h3 class="services_part_section_headline">Real estate</h3>
-                    <img class="services_part_section_image second" src="./images/real estate.png">
+                    <img class="services_part_section_image real_estate" src="./images/realEstate.png">
                 </a>
             </div>
             <div class="services_part_section five">
                 <a href="">
                     <img class="icons" src="./icons/community.png">
-                    <h3 class="services_part_section_headline">Join community.</h3>
-                    <img class="services_part_section_image second" src="./images/real estate.png">
+                    <h3 class="services_part_section_headline">Community</h3>
+                    <img class="services_part_section_image" src="./images/community.png">
                 </a>
             </div>
             <div class="services_part_section six">
                 <a href="">
                     <img class="icons" src="./icons/getInTouch.png">
-                    <h3 class="services_part_section_headline">Get in touch.</h3>
-                    <img class="services_part_section_image second" src="./images/real estate.png">
+                    <h3 class="services_part_section_headline">Get in touch</h3>
+                    <img class="services_part_section_image" src="./images/getInTouch.png">
                 </a>
             </div>
         </div>
@@ -170,7 +170,7 @@
     <!-- Partners-section -->
 
     <div class="partners">
-        <h1 class="partners_headline">Our 100+ Banking & NBFC Partners</h1>
+        <h1 class="partners_headline">Our Trusted Banking & NBFC Partners</h1>
         <div class="partners_list primary">
             <img class="partner_image" src="./photo/Untitled design (1).png" height="50px" >
             <img class="partner_image" src="./photo/Untitled design (2).png" height="50px">
@@ -189,61 +189,64 @@
             <img class="partner_image" src="./photo/Untitled design (12).png" height="50px">
         </div>
 
-        <div class="partners_list secondary">
-            <img class="partner_image" src="./photo/Untitled design (13).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (14).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (15).png" height="50px">
-            <img class="partner_image"src="./photo/Untitled design (16).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (17).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (18).png" height="50px">
+        <div id="secondary">
+            <div class="partners_list secondary">
+                <img class="partner_image" src="./photo/Untitled design (13).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (14).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (15).png" height="50px">
+                <img class="partner_image"src="./photo/Untitled design (16).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (17).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (18).png" height="50px">
+            </div>
+
+            <div class="partners_list secondary">
+                <img class="partner_image" src="./photo/Untitled design (19).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (21).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (22).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design (23).png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design 12000.png" height="50px">
+                <img class="partner_image" src="./photo/Untitled design.png" height="50px">
+            </div>
+
+            <div class="partners_list secondary">
+                <img class="partner_image" src="resized/ambit.jpeg" alt="ambit">
+                <img class="partner_image" src="resized/ashv.png" alt="ashv">
+                <img class="partner_image" src="resized/Axis.png" alt="axis">
+                <img class="partner_image" src="resized/birla.png" id="birla" alt="birla">
+                <img class="partner_image" src="resized/chola.png" alt="chola">
+                <img class="partner_image" src="resized/credilio.png" alt="credilio">
+            </div>
+
+            <div class="partners_list secondary">
+                <img class="partner_image" src="resized/creditsaison.jpeg" alt="creditsaison">
+                <img class="partner_image" src="resized/duetstche.png" alt="duetstche">
+                <img class="partner_image" src="resized/Fed.jpeg" alt="Fed">
+                <img class="partner_image" src="resized/Fulletron.png" alt="Fulletron">
+                <img class="partner_image" src="resized/Godrej.jpg" alt="Godrej">
+                <img class="partner_image" src="resized/Hero fincorp.png" alt="Hero">
+            </div>
+
+            <div class="partners_list secondary">
+                <img class="partner_image" src="resized/ICICI.png" alt="ICICI">
+                <img class="partner_image" src="resized/India Bulls.png" alt="India_bulls">
+                <img class="partner_image" src="resized/Werize.jpg" alt="Werize">
+                <img class="partner_image" src="resized/Kotak.png" alt="Kotak">
+                <img class="partner_image" src="resized/piramal.png" alt="piramal">
+                <img class="partner_image" src="resized/kvb.jpeg" id="kvb" alt="kvb">
+            </div>
+
+            <div class="partners_list secondary">
+                <img class="partner_image" src="resized/manappuram.png" alt="manappuram">
+                <img class="partner_image" src="resized/kuwy.jpeg" alt="kuwy">
+                <img class="partner_image" src="resized/jana small.png" id="jana" alt="jana">
+                <img class="partner_image" src="resized/Poonawala.png" alt="Poonawala">
+                <img class="partner_image" src="resized/Sundharam.png" alt="Sundharam">
+                <img class="partner_image" src="resized/ujjivan.png" alt="ujjivan">
+            </div>
         </div>
 
-        <div class="partners_list secondary">
-            <img class="partner_image" src="./photo/Untitled design (19).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (21).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (22).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design (23).png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design 12000.png" height="50px">
-            <img class="partner_image" src="./photo/Untitled design.png" height="50px">
-        </div>
-
-        <div class="partners_list secondary">
-            <img class="partner_image" src="resized/ambit.jpeg" alt="ambit">
-            <img class="partner_image" src="resized/ashv.png" alt="ashv">
-            <img class="partner_image" src="resized/Axis.png" alt="axis">
-            <img class="partner_image" src="resized/birla.png" id="birla" alt="birla">
-            <img class="partner_image" src="resized/chola.png" alt="chola">
-            <img class="partner_image" src="resized/credilio.png" alt="credilio">
-        </div>
-
-        <div class="partners_list secondary">
-            <img class="partner_image" src="resized/creditsaison.jpeg" alt="creditsaison">
-            <img class="partner_image" src="resized/duetstche.png" alt="duetstche">
-            <img class="partner_image" src="resized/Fed.jpeg" alt="Fed">
-            <img class="partner_image" src="resized/Fulletron.png" alt="Fulletron">
-            <img class="partner_image" src="resized/Godrej.jpg" alt="Godrej">
-            <img class="partner_image" src="resized/Hero fincorp.png" alt="Hero">
-        </div>
-
-        <div class="partners_list secondary">
-            <img class="partner_image" src="resized/ICICI.png" alt="ICICI">
-            <img class="partner_image" src="resized/India Bulls.png" alt="India_bulls">
-            <img class="partner_image" src="resized/Werize.jpg" alt="Werize">
-            <img class="partner_image" src="resized/Kotak.png" alt="Kotak">
-            <img class="partner_image" src="resized/piramal.png" alt="piramal">
-            <img class="partner_image" src="resized/kvb.jpeg" id="kvb" alt="kvb">
-        </div>
-
-        <div class="partners_list secondary">
-            <img class="partner_image" src="resized/manappuram.png" alt="manappuram">
-            <img class="partner_image" src="resized/kuwy.jpeg" alt="kuwy">
-            <img class="partner_image" src="resized/jana small.png" id="jana" alt="jana">
-            <img class="partner_image" src="resized/Poonawala.png" alt="Poonawala">
-            <img class="partner_image" src="resized/Sundharam.png" alt="Sundharam">
-            <img class="partner_image" src="resized/ujjivan.png" alt="ujjivan">
-        </div>
-
-        <button class="partners_button" onclick="">See more</button>
+        <button class="partners_button" id="seemore_button" onclick="showSecondary()">See more</button>
+        <button class="partners_button" id="seeless_button" onclick="showSecondary()">See less</button>
     </div>
 
     <br>
@@ -299,30 +302,30 @@
             </ul>
         </div>
         <div class="footer_right_container">
-                <h3 class="footer_right_container_headline">Get in touch</h3>
+            <h3 class="footer_right_container_headline">Get in touch</h3>
             <div class="footer_right_contact">
                 <div class="footer_right_contact_logo">
                     <a href="./icons/logo/phone-call.png">
-                        <img class="footer_right_social_logo call" src="./icons/logo/phone.png">
+                        <img class="footer_right_social_logo_image call" src="./icons/logo/phone.png">
                     </a>
                     <a href="#">
-                        <img class="footer_right_social_logo whatsapp" src="./icons/logo/whatsapp.png">
+                        <img class="footer_right_social_logo_image whatsapp" src="./icons/logo/whatsapp.png">
                     </a>
                     <a href="#">
-                        <img class="footer_right_social_logo email" src="./icons/logo/email.webp">
+                        <img class="footer_right_social_logo_image email" src="./icons/logo/email.webp">
                     </a>
                 </div>
             </div>
             <div class="footer_right_social">
                 <div class="footer_right_social_logo">
                     <a href="#">
-                        <img class="footer_right_social_logo insta" src="./icons/logo/instagram.webp">
+                        <img class="footer_right_social_logo_image insta" src="./icons/logo/instagram.webp">
                     </a>
                     <a href="#">
-                        <img class="footer_right_social_logo fb" src="./icons/logo/facebook.png">
+                        <img class="footer_right_social_logo_image fb" src="./icons/logo/facebook.png">
                     </a>
                     <a href="#">
-                        <img class="footer_right_social_logo linkedin" src="./icons/logo/linkedin.webp">
+                        <img class="footer_right_social_logo_image linkedin" src="./icons/logo/linkedin.webp">
                     </a>
                 </div>
             </div>
@@ -340,4 +343,27 @@
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+
+
+function showSecondary() {
+    let secondary = document.getElementById('secondary');
+    let seeMoreBtn = document.getElementById('seemore_button');
+    let seeLessBtn = document.getElementById('seeless_button');
+
+    if(secondary.style.display === 'none') {
+        secondary.style.display = 'block';
+        seeMoreBtn.style.display = 'none';
+        seeLessBtn.style.display = 'block';
+    } else {
+        secondary.style.display = 'none';
+        seeLessBtn.style.display = 'none';
+        seeMoreBtn.style.display = 'block';
+    }
+}
+
+
+
+
+
 </script>

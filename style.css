@@ -194,7 +194,8 @@ p {
 }
 
 .heroBtn:hover {
-    transform: scale(1.2);
+    background-color: white;
+    color: red;
 }
 
 #playBtn {
@@ -247,6 +248,11 @@ p {
     transform: scale(1.1);
 }
 
+.services_part_section:hover .services_part_section_headline {
+    color: white;
+    transform: scale(1.1);
+}
+
 .services_part_section_image {
     width: 100%;
     margin-top: 1rem;
@@ -267,6 +273,7 @@ p {
 
     .Hero {
         flex-wrap: wrap;
+        margin-top: 2rem;
     }
 
     .hero_left {
@@ -274,7 +281,8 @@ p {
     }
 
     .hero_right_image {
-        width: calc(100%);
+        width: calc(110%);
+
     }
 
     .heroBtn {
@@ -367,14 +375,10 @@ p {
     border: none;
 }
 
-.secondary {
-    display: none;
-}
-
 
 @media only screen and ( max-width: 768px) {
     .partners_headline {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 2rem;
     }
 
@@ -427,7 +431,7 @@ strong {
 .footer_middle_container {
     display: flex;
     justify-content: space-between;
-    flex: 6;
+    flex: 5;
 }
 
 .footer_middle_list {
@@ -455,10 +459,17 @@ strong {
 .footer_right_contact_logo {
     display: flex;
     justify-content: flex-start;
-    width: 2rem;
+    width: 100%;
     height: auto;
     gap: 1rem;
 }
+
+.footer_right_social_logo_image,
+.footer_right_contact_logo_image {
+    width: 2rem;
+    height: auto;
+}
+
 
 @media only screen and (max-width: 768px) {
     .footer {
