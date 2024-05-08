@@ -207,6 +207,7 @@ p {
 
 .hero_right_image {
     margin-right: -2rem;
+    width: 120%;
 }
 
 /* Services */
@@ -246,6 +247,7 @@ p {
 .services_part_section:hover {
     background-color: black;
     transform: scale(1.1);
+    transition: 0.2s ease;
 }
 
 .services_part_section:hover .services_part_section_headline {
