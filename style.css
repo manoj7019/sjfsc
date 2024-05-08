@@ -219,50 +219,67 @@ p {
     padding: 0.5rem;
 }
 
-.services {
+.services, /* index-page */
+.loans /* loans-page */ {
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
 }
 
-.services_part {
+.services_part, /* index-page */
+.loan_types /* loans-page */{
     display: flex;
+    justify-content: center;
     padding: 1.5rem;
     gap: 1.5rem;
     margin: -0.7rem;
     flex-wrap: wrap;
 }
 
-.services_part_section {
+.services_part_section, /* index-page */
+.loan_types_section /* loans-page */ {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #f1f1f1;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    width: calc(33.3333% - 1rem);
+    width: calc(33.33333% - 1.3rem);
     align-items: center;
     text-align: center;
 }
 
-.services_part_section:hover {
+.loan_types_section {
+    width: calc(16.66667% - 1.3rem);
+}
+
+.services_part_section:hover, /* index-page */
+.loan_types_section:hover /* loans-page */ {
     background-color: black;
     transform: scale(1.1);
     transition: 0.2s ease;
 }
 
-.services_part_section:hover .services_part_section_headline {
+.services_part_section:hover .services_part_section_headline, /* index-page */ 
+.loan_types_section:hover .loan_types_section_headline /* loans-page */ {
     color: white;
     transform: scale(1.1);
 }
 
-.services_part_section_image {
+.services_part_section_image,
+.loan_types_section_image {
     width: 100%;
     margin-top: 1rem;
 }
 
-.partSecondHeadline {
+.partSecondHeadline,
+.loans_headline {
     font-size: 4rem;
     margin: 4rem;
+    text-align: center;
+}
+
+.loans_para {
+    margin: -2rem 2rem 2rem 2rem;
     text-align: center;
 }
 
@@ -292,7 +309,8 @@ p {
         padding: 0.5rem 1rem;
     }
     
-    .partSecondHeadline {
+    .partSecondHeadline,
+    .loans_headline {
         font-size: 1.6rem;
         margin: 3rem 0 1rem 0 ;
     }
@@ -308,13 +326,20 @@ p {
         padding: 0.5rem;
     }
 
-    .services_part_section {
+    .services_part_section,
+    .loan_types_section {
         padding: 1rem;
         width: calc(50% - 0.75rem);
     }
 
-    .sevices_part_section_image {
-        height: 1rem;
+    .sevices_part_section_image,
+    .loan_types_section_image {
+        height: 4rem;
+        width: auto;
+    }
+
+    .loans_para {
+        margin: 1.5rem;
     }
 
     p {
