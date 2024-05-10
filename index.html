@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer type="module"></script>
     <link rel="stylesheet" href="style.css">
     <title>SJFSC</title>
 </head>
@@ -73,11 +74,8 @@
             </div>
         </div>
         <div class="buttons">
-            <a href="">
-                Sign Up
-            </a>
-            <button class="headerBtn">
-                Login
+            <button class="headerBtn" id="google-login-btn">
+                Sign in
             </button>
         </div>
         <!-- Hamburger menu -->
@@ -338,15 +336,13 @@
 </html>
 
 <script>
-    function openNav() {
+function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
-
 
 function showSecondary() {
     let secondary = document.getElementById('secondary');
@@ -363,9 +359,4 @@ function showSecondary() {
         seeMoreBtn.style.display = 'block';
     }
 }
-
-
-
-
-
 </script>
