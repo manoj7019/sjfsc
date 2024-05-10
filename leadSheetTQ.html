@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loans</title>
+</head>
+<body onload="showSecondary()">
+    <div class="header">
+        <a href="index.html">
+            <img class="logo" src="./icons/logo/sjlogo.png">
+        </a>
+        <div class="navbar">
+            <div class="dropdown" id="loans">
+                <a class="dropBtn" id="loanBtn">Loans</a>
+                    <div class="dropdown-content">
+                        <a href="#personal">Personal loan</a>
+                        <a href="#business">Business loan</a>
+                        <a href="#home">Home loan</a>
+                        <a href="#home">Loan against property / Mortgage</a>
+                        <a href="#home">Educational loan</a>
+                        <a href="#home">Overdraft (OD) and Cash credit (CC)</a>
+                        <a href="#home">Two wheeler loan</a>
+                        <a href="#home">Car loan</a>
+                        <a href="#home">Electric vehicle loan</a>
+                        <a href="#home">Commercial vehicle loan</a>
+                        <a href="#home">Used vehicle loan</a>
+                        <a href="#home">Machinery / Equipment loan</a>
+                        <a href="#home">Professional loan</a>
+                        <a href="#home">Balance transfer / Top-up loans</a>
+                        <a href="#home">Credit cards</a>
+                    </div>
+            </div>
+            <div class="dropdown" id="insurance">
+                <a class="dropBtn" id="loanBtn">Insurance</a>
+                    <div class="dropdown-content">
+                        <a href="#">Health insurance</a>
+                        <a href="#">Life insurance</a>
+                        <a href="#">General / Motor insurance</a>
+                        <a href="#">Travel insurance</a>
+                        <a href="#">Property insurance</a>
+                        <a href="#">Fire insurance</a>
+                        <a href="#">Home insurance</a>
+                    </div>
+            </div>
+            <div class="dropdown" id="itServices">
+                <a class="dropBtn" id="loanBtn">IT Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Web development</a>
+                        <a href="#">App development</a>
+                        <a href="#">Digital marketing</a>
+                        <a href="#">Graphic design</a>
+                    </div>
+            </div>
+            <div class="dropdown" id="realEstate">
+                <a class="dropBtn" id="loanBtn">Real estate</a>
+                    <div class="dropdown-content">
+                        <a href="#">Property Buy support</a>
+                        <a href="#">Property Sell support</a>
+                        <a href="#">Project development support</a>
+                    </div>
+            </div>
+            <div class="dropdown" id="community">
+                <a class="dropBtn" id="loanBtn">Community</a>
+                    <div class="dropdown-content">
+                    </div>
+            </div>
+            <div class="dropdown" id="contactUs">
+                <a class="dropBtn" id="loanBtn">Contact Us</a>
+                    <div class="dropdown-content">
+                    </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="">
+                Sign Up
+            </a>
+            <button class="headerBtn">
+                Login
+            </button>
+        </div>
+        <!-- Hamburger menu -->
+        <div id="myNav" class="overlay">
+            <a href="" class="closeBtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="./loans.html">Loans</a>
+                <a href="./insurance.html">Insurance</a>
+                <a href="./itServices.html">IT Services</a>
+                <a href="./realEstate.html">Real estate</a>
+                <a href="#">Community</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+        <span class="hamBtn" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="thankYou">
+        <h1 class="loans_headline">Thank You!</h1>
+        <img class="thanksGirl" src="./images/thanks Girll.png">
+    </div>
+
+</body>
+<script>
+    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</html>
