@@ -1,29 +1,40 @@
-function initGoogleAuth() {
-    gapi.load('auth2', function() {
-      gapi.auth2.init({
-        client_id: '57273358504-kl41t8su8i0n2tlc6t27bl9nbujc5lki.apps.googleusercontent.com'
-      });
-    });
-  }
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
 
-  function signIn() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signIn().then(function(googleUser) {
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId());
-      console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail());
-    });
-  }
+const firebaseConfig = {
+    apiKey: "AIzaSyB3n9wR1rbGGI0htWR9rnH5u-_ye8DYs0U",
+    authDomain: "sj-fintech.firebaseapp.com",
+    projectId: "sj-fintech",
+    storageBucket: "sj-fintech.appspot.com",
+    messagingSenderId: "139128222866",
+    appId: "1:139128222866:web:f3ad20736bb4db0a7c224b"
+};
 
-  window.onload = function() {
-    initGoogleAuth();
-  };
+const app = initializeApp(firebaseConfig);
 
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function() {
-      console.log('User signed out.');
+const db = getDatabase(app);
+
+
+
+document.getElementById('submit').addEventListener('click', function(e) {
+    set(ref(db, 'user/' + document.getElementById('fullName').value), {
+
+        FullName: document.getElementById('fullName').value,
+        PhoneNumber: document.getElementById('phone_number').value,
+        EmailID: document.getElementById('email_id').value,
+        DateOfBirth: document.getElementById('date_of_birth').value,
+        AadharNumber: document.getElementById('aadhar_number').value,
+        PanNumber: document.getElementById('pan_number').value,
+        Gender: document.getElementById('gender').value,
+        MaritalStatus: document.getElementById('marital_status').value,
+        PermanentAddress: document.getElementById('permanent_address').value,
+        City: document.getElementById('city').value,
+        State: document.getElementById('state').value,
+        Pincode: document.getElementById('pincode').value,
+        ResidentialAddress: document.getElementById('residential_address').value,
+        ResidentialCity: document.getElementById('residential_city').value,
+        ResidentialState: document.getElementById('residential_state').value,
+        ResidentialPincode: document.getElementById('residential_pincode').value,
+        PanNumber: document.getElementById('pan_number').value
     });
-  }
+})

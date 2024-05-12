@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Loans</title>
 </head>
-<body onload="showSecondary()">
+<body>
     <div class="header">
         <a href="index.html">
             <img class="logo" src="./icons/logo/sjlogo.png">
@@ -99,97 +99,307 @@
     <h1 class="loans_headline">Basic / KYC Details</h1>
     <p class="loans_para">Please fill all the details below for KYC verification</p>
 
-    <div class="register_form">
-        <div class="register_form_top">
+    <!-- Part 1 -->
+<div class="form">
+    <form>
+        <div class="loan_register_form">
             <div class="register_form_left">
-                <p>Name as per Aadhar :</p>
-                <input type="text" id="fullName" name="fname">
+                <div class="input_box">
+                    <span>Name as per Aadhar :</span>
+                    <input type="text" id="fullName" value="" required>
+                </div>
 
-                <p>Phone number :</p>
-                <input type="text" id="phone_number" name="fname">
+                <div class="input_box">
+                    <span>Phone number :</span>
+                    <input type="text" id="phone_number" value="" required>
+                </div>
 
-                <p>Email ID:</p>
-                <input type="email" id="email_id" name="fname">
+                <div class="input_box">
+                    <span>Email ID:</span>
+                    <input type="email" id="email_id" value="" required>
+                </div>
 
-                <p>Date of Birth :</p>
-                <input type="date" id="date_of_birth" name="fname">
+                <div class="input_box">
+                    <span>Date Of Birth:</span>
+                    <input type="date" id="date_of_birth" value="" required>
+                </div>
+                
+                <div class="input_box">
+                    <span>Aadhar Number:</span>
+                    <input type="text" id="aadhar_number" name="fname">
+                </div>
 
-                <p>Aadhar Number:</p>
-                <input type="text" id="aadhar_number" name="fname">
-                <br>
-                <label for="aadhar_number">Upload Aadhar front</label>
-                <input type="file" id="file1" name="fname">
-                <label for="aadhar_number">Upload Aadhar back</label>
-                <input type="file" id="file1" name="fname">
+                <div class="input_box">
+                    <label for="aadhar_number">Upload Aadhar front</label>
+                    <input type="file" id="aadhar_front" value="" >
+                    <label for="aadhar_number">Upload Aadhar back</label>
+                    <input type="file" id="aadhaar_back" value="" >
+                </div>
 
-                <p>PAN Number :</p>
-                <input type="text" id="pan_number" name="fname">
-                <br>
-                <label for="file1">Upload pan card</label>
-                <input type="file" id="file1" name="fname">
+                <div class="input_box">
+                        <span>PAN Number :</span>
+                        <input type="text" id="pan_number" value="" required>
+                    <div class="input_box">
+                        <label for="pan_image">Upload pan card</label>
+                        <input type="file" id="pan_image" value="" >
+                    </div>
+                </div>
 
-                <p>Gender :</p>
-                <select name="gender" id="gender">
-                    <option disabled selected value>select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="others">Others</option>
-                </select>
+                <div class="input_box">
+                    <span>Gender :</span>
+                    <select name="gender" id="gender" value="" required>
+                        <option disabled selected value>select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
 
-                <p>Marital status :</p>
-
-                    <input type="radio" id="single" name="marital_status" value="single">
-                    <label for="single">Single</label>
-                    <input type="radio" id="married" name="marital_status" value="married">
-                    <label for="married">Married</label>
+                <div class="input_box marital_status"></div>
+                    <span>Marital status :</span>
+                    <div class="input_box marital">
+                        <input type="radio" class="marital_status" name="marital" value="single" required>
+                        <span>Single</span>
+                    </div>
+                    <div class="input_box marital">
+                        <input type="radio" class="marital_status" name="marital" value="married" required>
+                        <span>Married</span>
+                    </div>
             </div>
 
             <div class="register_form_right">
-                <p>Permanent Address :</p>
-                <input type="text" id="address" name="fname">
+                <div class="input_box address">
+                    <span>Permanent Address :</span>
+                    <input type="text" id="permanent_address" value="" required>
+                </div>
 
-                <p>City :</p>
-                <input type="text" id="city" name="fname">
+                <div class="input_box">
+                    <span>City :</span>
+                    <input type="text" id="city" value="" required>
+                </div>
 
-                <p>State :</p>
-                <input type="text" id="state" name="fname">
+                <div class="input_box">
+                    <span>State :</span>
+                    <input type="text" id="state" value="" required>
+                </div>
 
-                <p>Pincode :</p>
-                <input type="text" id="state" name="fname">
-                    <br>
+                <div class="input_box">
+                    <span>Pincode :</span>
+                    <input type="text" id="pincode" value="" required>
+                </div>
 
-                    <input type="checkbox" id="same_address" name="fname">
+        <!--    <div class="input_box checkbox">
+                    <input type="checkbox" id="same_address" value="" required>
                     <label for="same_address">Residential address same as permanent address</label>
+                </div>
+        -->
 
-                <p>Residential Address :</p>
-                <input type="text" id="address" name="fname" >
+                <div class="input_box address">
+                    <span>Residential Address :</span>
+                    <input type="text" id="residential_address" value="" required>
+                </div>
                 <br>
 
-                <p>City :</p>
-                <input type="text" id="city" name="fname">
+                <div class="input_box">
+                    <span>City :</span>
+                    <input type="text" id="residential_city" value="" required>
+                </div>
 
-                <p>State :</p>
-                <input type="text" id="state" name="fname">
+                <div class="input_box">
+                    <span>State :</span>
+                    <input type="text" id="residential_state" value="" required>
+                </div>
 
-                <p>Pincode :</p>
-                <input type="text" id="state" name="fname">
-                <br>
-                <label for="aadhar_number">Rent / Lease agreement</label>
-                <input type="file" id="file1" name="fname">
+                <div class="input_box">
+                    <span>Pincode :</span>
+                    <input type="text" id="residential_pincode" value="" required>
+                </div>
 
-                <label for="aadhar_number">Electricity bill (last month)</label>
-                <input type="file" id="file1" name="fname">
+                <div class="input_box">
+                    <label for="rent_lease_agreement">Rent / Lease agreement</label>
+                    <input type="file" id="rent_lease_agreement" value="" >
+                </div>
+
+                <div class="input_box">
+                    <label for="electricity_bill">Electricity bill (last month)</label>
+                    <input type="file" id="electricity_bill" value="" >
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 2 -->
+        <div class="loan_register_form">
+            <div class="register_form_left">
+                <div class="input_box">
+                    <span>Name of the company :</span>
+                    <input type="text" id="company_name" value="" required>
+                </div>
+
+                <div class="input_box">
+                    <span>Years of work experience :</span>
+                    <select name="work_experience" id="work_experience" value="" required>
+                        <option value="first"> 0 - 1 yr</option>
+                        <option value="second"> 1 - 3 yrs</option>
+                        <option value="third"> 3 - 5 yrs</option>
+                        <option value="third"> 5 - 7 yrs</option>
+                        <option value="third"> 7yrs above </option>
+                    </select>
+                </div>
+
+                <div class="input_box">
+                    <span>Company email ID:</span>
+                    <input type="email" id="company_email" value="" required>
+                </div>
+
+                <div class="input_box">
+                    <span>HR email ID:</span>
+                    <input type="email" id="hr_email" value="" required>
+                </div>
+
+                <div class="input_box">
+                    <span>Net Salary (per month):</span>
+                    <input type="text" id="net_salary" value="" required>
+                </div>
+
+                <div class="input_box">
+                    <span>Last 3 months salary slip :</span>
+                    <label for="salary_slip_1">Last 1<sup>st</sup> month</label>
+                    <input type="file" id="salary_slip_1" value="" >
+                    <label for="salary_slip_2">Last 2<sup>nd</sup> month</label>
+                    <input type="file" id="salary_slip_2" value="" >
+                    <label for="salary_slip_3">Last 3<sup>rd</sup> month</label>
+                    <input type="file" id="salary_slip_3" value="" >
                 </div>
             </div>
 
-        <div class="register_form_bottom">
-            <div class="next_btn_container">
-                <a href="./leadSheetIncome.html">
-                    <button class="next_btn" id="next_btn">Save & continue</button>
-                </a>
+            <div class="register_form_right">
+
+            <div class="input_box">
+                <span>ID proof</span>
+                <label for="id_card">ID card</label>
+                <input type="file" id="id_card" value="" >
+                <label for="joining_letter">Joining letter</label>
+                <input type="file" id="joining_letter" value="" >
+            </div>
+
+            <div class="input_box">
+                <span>Company Address :</p>
+                <input type="text" id="company_address" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>City :</span>
+                <input type="text" id="company_city" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>State :</span>
+                <input type="text" id="company_state" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>Pincode :</span>
+                <input type="text" id="company_pincode" value="" required>
             </div>
         </div>
     </div>
+
+    <!-- Part 3 -->
+
+    <div class="loan_register_form">
+        <div class="register_form_left">
+            <div class="input_box">
+                <span>Name of the Bank :</span>
+                <input type="text" id="bank_name" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>Account Type :</span>
+                <select name="account_type" id="account_type" value="" required> 
+                    <option disabled selected value> Select </option>
+                    <option value="first"> Savings Account</option>
+                    <option value="second"> Current Account</option>
+                    <option value="third"> Salaried Account</option>
+                </select>
+            </div>
+
+            <div class="input_box">
+                <span>Account Number :</span>
+                <input type="text" id="account_number" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>IFSC Code :</span>
+                <input type="email" id="ifsc_code" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>Account holder name :</span>
+                <input type="text" id="account_holder_name" value="" required>
+            </div>
+        </div>
+
+        <div class="register_form_right">
+            <div class="input_box">
+                <span>Bank Proof</span>
+                <label for="passbook_photo">Passbook</label>
+                <input type="file" id="passbook_photo" value="" >
+                <label for="cheque_leaf_photo">Cheque leaf</label>
+                <input type="file" id="cheque_leaf_photo" value="" >
+            </div>
+
+            <div class="input_box">
+                <span>Account statement :</span>
+                <label for="account_statement">Last 1 year till date</label>
+                <input type="file" id="account_statement" value="" >
+                <label for="statement_password">If password?</label>
+                <input type="name" id="statement_password" value="" >
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 4 -->
+
+    <!-- <div class="loan_register_form"> -->
+        <div class="register_form_left">
+            <p>Reference :</p>
+            <div class="input_box">
+                <span>Refernce 1</span>
+                <label for="reference_name_1">Name</label>
+                <input type="text" id="reference_name_1" value="" required>
+                <label for="reference_number_1">Phone number</label>
+                <input type="text" id="reference_number_1" value="" required>
+                <label for="reference_address_1">Address</label>
+                <input type="text" id="reference_address_1" value="" required>
+            </div>
+
+            <div class="input_box">
+                <span>Refernce 2</span>
+                <label for="reference_name_2">Name</label>
+                <input type="text" id="reference_name_2" value="" required>
+                <label for="reference_number_2">Phone number</label>
+                <input type="text" id="reference_number_2" value="" required>
+                <label for="reference_address_2">Address</label>
+                <input type="text" id="reference_address_2" value="" required>
+            </div>
+        </div>
+
+        <div class="register_form_right">
+            <p>CIBIL Report :</p>
+            <span>Upload (cibil.com, experian)</span>
+            <input type="file" id="cibil_report" value="" >
+        </div>
+    </div>
+
+    <!-- part 5 -->
+    
+    <div class="next_btn_container">
+        <a href="./leadSheetTQ.html">
+            <input type="submit" value="Save & continue" id="submit">
+        </a>
+    </div>
+    </form>
+</div>
 
     <div class="footer">
         <div class="footer_left_container">
@@ -272,13 +482,89 @@
     </div>
 
 </body>
-<script>
-    function openNav() {
+<!-- <script src="./index.js" defer type="module"></script> -->
+<script type="module">
+function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyB3n9wR1rbGGI0htWR9rnH5u-_ye8DYs0U",
+    authDomain: "sj-fintech.firebaseapp.com",
+    databaseURL: "https://sj-fintech-default-rtdb.firebaseio.com",
+    projectId: "sj-fintech",
+    storageBucket: "sj-fintech.appspot.com",
+    messagingSenderId: "139128222866",
+    appId: "1:139128222866:web:f3ad20736bb4db0a7c224b"
+  };
+
+    const app = initializeApp(firebaseConfig);
+
+    const db = getDatabase(app);
+
+
+
+    document.getElementById('submit').addEventListener('click', function(e) {
+        e.preventDefault();
+        set(ref(db, 'user/' + document.getElementById('fullName').value), {
+
+            FullName: document.getElementById('fullName').value,
+            PhoneNumber: document.getElementById('phone_number').value,
+            EmailID: document.getElementById('email_id').value,
+            DateOfBirth: document.getElementById('date_of_birth').value,
+            AadharNumber: document.getElementById('aadhar_number').value,
+            PanNumber: document.getElementById('pan_number').value,
+            Gender: document.getElementById('gender').value,
+            MaritalStatus: document.getElementById('marital_status').value,
+            PermanentAddress: document.getElementById('permanent_address').value,
+            City: document.getElementById('city').value,
+            State: document.getElementById('state').value,
+            Pincode: document.getElementById('pincode').value,
+            ResidentialAddress: document.getElementById('residential_address').value,
+            ResidentialCity: document.getElementById('residential_city').value,
+            ResidentialState: document.getElementById('residential_state').value,
+            ResidentialPincode: document.getElementById('residential_pincode').value,
+            PanNumber: document.getElementById('pan_number').value,
+            CompanyName: document.getElementById('company_name').value,
+            WorkExperience: document.getElementById('work_experience').value,
+            CompanyEmailID: document.getElementById('company_email').value,
+            HREmailID: document.getElementById('hr_email').value,
+            NetSalary: document.getElementById('net_salary').value,
+            SalarySlip1: document.getElementById('salary_slip_1').value,
+            SalarySlip2: document.getElementById('salary_slip_2').value,
+            SalarySlip3: document.getElementById('salary_slip_3').value,
+            IDCard: document.getElementById('id_card').value,
+            JoiningLetter: document.getElementById('joining_letter').value,
+            CompanyAddress: document.getElementById('company_address').value,
+            ComapnyCity: document.getElementById('company_city').value,
+            CompanyState: document.getElementById('company_state').value,
+            CompanyPincode: document.getElementById('company_pincode').value,
+            BankName: document.getElementById('bank_name').value,
+            AccountType: document.getElementById('account_type').value,
+            AccountNumber: document.getElementById('account_number').value,
+            IfscCode: document.getElementById('ifsc_code').value,
+            AccountHolderName: document.getElementById('account_holder_name').value,
+            PassbookPhoto: document.getElementById('passbook_photo').value,
+            ChequeLeafPhoto: document.getElementById('cheque_leaf_photo').value,
+            AccountStatement: document.getElementById('account_statement').value,
+            StatementPassword: document.getElementById('statement_password').value,
+            ReferenceName1: document.getElementById('reference_name_1').value,
+            ReferenceNumber1: document.getElementById('reference_number_1').value,
+            ReferenceAddress1: document.getElementById('reference_address_1').value,
+            ReferenceName2: document.getElementById('reference_name_2').value,
+            ReferenceNumber2: document.getElementById('reference_number_2').value,
+            ReferenceAddress2: document.getElementById('reference_address_2').value,
+            CibilReport: document.getElementById('cibil_report').value
+
+        });
+        alert('Logged In!')
+    })
 </script>
 </html>
